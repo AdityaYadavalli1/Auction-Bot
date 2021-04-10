@@ -9,7 +9,6 @@ if len(sys.argv) != 2:
 n = int(sys.argv[1])
 players = ['Superman', 'Amla Thopu Dammu Unte Aapu']  # Select the names of your bots here
 
-
 async def end(key, duration, session):
     await asyncio.sleep(duration)
     await session.post('http://localhost:8080/end_auction', json={'key': key})
