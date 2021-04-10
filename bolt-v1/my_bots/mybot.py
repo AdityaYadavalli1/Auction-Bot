@@ -8,7 +8,7 @@ class MyBot(Client):
         super().__init__()
         self.name = "Amla Thopu Dammu Unte Aapu"  # Your Bot's Name
         # Your Initialization Code Here
-        self.s = 0.1
+        self.s = 0.00001
         self.last_bid = {}
         pass
 
@@ -17,9 +17,6 @@ class MyBot(Client):
         self.last_bid[auction_id] = self.s
         print("Start Bid")
         await super().submit_bid(auction_id, self.s)
-        # while(true):
-        #     if()
-        # asyncio.sleep(3)
 
         # Your code for starting an auction
 
