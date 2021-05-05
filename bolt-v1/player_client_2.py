@@ -1,10 +1,10 @@
 import aiohttp
 from aiohttp import web
-from my_bots.mybot import MyBot
+from my_bots.team_4 import Team_4_Bot
 from typing import AsyncIterator
 import sys
 
-bot = MyBot()
+bot = Team_4_Bot()
 if len(sys.argv) != 2:
     print("Incorrect arguments")
     exit(0)
