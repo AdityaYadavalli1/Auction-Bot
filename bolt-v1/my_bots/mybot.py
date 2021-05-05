@@ -30,6 +30,7 @@ class MyBot(Client):
                 await super().submit_bid(auction_id, next_bid+0.00001)
             if self.stale_utility(curr_bid, next_bid, self.t) < self.stale_utility(curr_bid, next_bid, self.t+1):
                 last_bid = self.last_bid[auction_id]
+                self.last_bid[auction_id] = last_bid*1.125
                 await super().submit_bid(auction_id, last_bid*1.125)
             else:
                 await super().end_auction(auction_id)  
