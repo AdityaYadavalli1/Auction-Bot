@@ -7,7 +7,8 @@ if len(sys.argv) != 2:
     print("Incorrect arguments")
     exit(0)
 n = int(sys.argv[1])
-players = ['Superman', 'Flash']  # Select the names of your bots here
+players = ['Godzilla', 'Sniper']  # Select the names of your bots here
+
 
 async def end(key, duration, session):
     await asyncio.sleep(duration)

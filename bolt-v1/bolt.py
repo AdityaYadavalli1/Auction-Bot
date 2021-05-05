@@ -50,7 +50,7 @@ def try_make_db() -> None:
     if sqlite_db.exists():
         return
 
-    with sqlite3.connect(str(sqlite_db)) as conn:
+    with sqlite3.connect(sqlite_db) as conn:
         cur = conn.cursor()
         cur.execute(
             """CREATE TABLE logs (

@@ -8,7 +8,7 @@ if len(sys.argv) != 3:
 
 duration = int(sys.argv[1])
 key = int(sys.argv[2])
-players = ['Superman', 'Flash']  # Select the names of your bots here
+players = ['Batman', 'Superman']  # Select the names of your bots here
 
 if duration <= 0:
     print("Please use a positive duration")
