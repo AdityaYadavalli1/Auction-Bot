@@ -22,7 +22,7 @@ python3 run_tournament.py [number_of_auctions]
 
 ## Performance 
 
-Even though we are 5th in the standings, we practicalled tied with the 3rd bot.    
+Even though we are 5th in the standings, we practically tied with the 3rd bot.    
 
 Due to the auction being highly non-deterministic, the whole leaderboard could be highly non-deterministic as well. We didn't want to gamble our position away to this. Therefore, to be consistently placed well on the leaderboard, we employ a *hybrid* strategy where we also have a fixed bidding strategy component in addition to a reactive bidding strategy component that most teams have used. In the fixed bidding strategy, we bid slightly higher than the previous bid after a fixed duration (without looking at the opponents bid). Hence, the bot name **Flash** 
 
@@ -36,7 +36,7 @@ More about our strategy [here](https://github.com/AdityaYadavalli1/Auction-Bot/b
 | Lupin2.0 | 362.4395948 |
 | New Genesis | 270.4999039 |
 | Surreal | 268.7178726 |
-| **Flash** | **267.550594** | 
+| *Flash* | *267.550594* | 
 | Sniper | 216.0746209 | 
 | Zoe | 212.5030995 |
 | Saitama | 182.0978188 |
